@@ -1,0 +1,24 @@
+{
+  "name": "lec2_problem",
+  "version": "1.0.0",
+  "description": "Task 2 problem",
+  "type": "module",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fouad-abdelhady/nodeSprint.git"
+  },
+  "author": "Fouad Abdelhady",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fouad-abdelhady/nodeSprint/issues"
+  },
+  "homepage": "https://github.com/fouad-abdelhady/nodeSprint#readme",
+  "dependencies": {
+    "@devmehq/sdk-js": "^1.1.4",
+    "node-fetch": "^3.3.1"
+  }
+}
