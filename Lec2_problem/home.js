@@ -33,8 +33,17 @@ async function getExchangeRate(){
 }
 
 async function saveOutput(categories){
+    let output = [];
+    let category = {};
     for(const [key, value] of categories){
-        await fs.writeFile(`./output/category${key}.json`, JSON.stringify(value));
+        category.name = `category${key}`;
+        category.id = key;
+        output.push({
+            category: category,
+            products: value
+        });
+        category = {};
     }
+    await fs.writeFile(`./Lec2_problem/output/products.json`, JSON.stringify(output));
 }
 begin();
