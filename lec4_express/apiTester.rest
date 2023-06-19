@@ -1,0 +1,23 @@
+GET http://localhost:8080/products/220
+###
+GET http://localhost:8080/products
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "title": "Product 2",
+  "price": 15,
+  "description": "A description",
+  "categoryId": 1,
+  "images": ["https://placeimg.com/640/480/any"]
+}
+###
+PUT http://localhost:8080/products/218
+Content-Type: application/json
+
+{
+  "price":25
+}
+###
+DELETE  http://localhost:8080/products/220
