@@ -1,0 +1,48 @@
+GET http://localhost:8080/products/221
+###
+GET http://localhost:8080/products
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "title": "Product 2",
+  "price": 15,
+  "description": "A description",
+  "categoryId": 1,
+  "images": ["https://placeimg.com/640/480/any"]
+}
+###
+PUT http://localhost:8080/products/221
+Content-Type: application/json
+
+{
+  "price":25
+}
+###
+DELETE  http://localhost:8080/products/221
+###
+POST http://localhost:8080/createAccount
+Content-Type: application/json
+
+{
+  "name":"Fouad",
+  "lastName":"Abdelhady",
+  "userName":"youssef_abdelhady",
+  "password":"12345678",
+  "role":"customer"
+}
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "userName":"youssef_abdelhady",
+  "password":"12345677"
+}
+###
+GET http://localhost:8080/freshToken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NTYwMjkzfQ.N-JP8htnVAkbJOk1HtHkEN7DP2eSLDXV6vfD5tzvHC8
+###
+GET http://localhost:8080/signOut
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NTYwMjkzLCJleHAiOjE2ODc1NjA0Mzd9.G-p1lP_0ieRF18Q4MwCEMeDaMCoMm9WuEKNxOZoo3m4
