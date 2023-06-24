@@ -3,17 +3,19 @@ import fs from 'fs/promises';
 import crypto from 'crypto-js';
 
 const usersFileDir = './data/users.json';
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const passworPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8}$/;
 export const newUserBodySchema = Joi.object({
     name: Joi.string().required(),
     lastName: Joi.string().required(),
-    userName: Joi.string().required(),
-    password: Joi.string().min(8).required(),
+    userName: Joi.string().regex(emailPattern).required(),
+    password: Joi.string().min(8).regex(passworPattern).required(),
     role: Joi.string().required()
 });
 
 export const loginBodySchema = Joi.object({
-    userName: Joi.string().required(),
-    password: Joi.string().min(8).required()
+    userName: Joi.string().regex(emailPattern).required(),
+    password: Joi.string().min(8).regex(passworPattern).required()
 });
 
 export async function saveUser(user, options = {hashPassword:true}){
@@ -53,7 +55,7 @@ async function readFromFile(dir){
         }
         else throw(err);
     });
-    data??={};
+    data??="{}";
     return JSON.parse(data);
 }
 async function writeInFile(data, dir){

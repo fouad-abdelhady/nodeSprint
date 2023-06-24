@@ -1,11 +1,12 @@
 import * as authBodySchema from '../models/authBodyModel.js';
+import actions from '../utils/actions.js';
 import Jwt from "jsonwebtoken";
 
 export const users = {
-    admin:["all"],
+    admin:[actions.all],
     customer:[
-        "getProduct",
-        "getProducts"
+        actions.getProducts,
+        actions.getCategory
     ]
 }
 
@@ -47,8 +48,7 @@ export function validateNewUser(req, res, next){
 export const  verifyUser = (action)=>(req, res, next)=>{
     if(!verifyToken(req, res)) return;
     if(!isUserAuthorized(action, req.user.role)){
-        res.sendStatus(401);
-        res.send({message:"You are not authorized to perform that action."});
+        res.status(401).send({message:"You are not authorized to perform that action."});
         return;
     }
     next();
@@ -81,8 +81,8 @@ export async function signUserOut(req, res){
 }
 
 function createAccessToken(userInfo){
-    const now = Math.floor(Date.now() / 1000); // get current time in seconds
-    const expiresIn = 20; 
+    const now = Math.floor(Date.now() / 1000);
+    const expiresIn = 60 * 60; 
     const exp = now + expiresIn; 
     return Jwt.sign({ ...userInfo, exp }, process.env.ACCESS_TOKEN);
 }

@@ -1,8 +1,11 @@
-GET http://localhost:8080/products/221
+GET http://localhost:8080/products/213
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg3NjE4NTMxLCJpYXQiOjE2ODc2MTg0NzF9.Tlz8-hY8W0jZ5SMMjqb9SBXsDBn5Ozbm0PChcvbPmsg
 ###
 GET http://localhost:8080/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg3NjE4NTMxLCJpYXQiOjE2ODc2MTg0NzF9.Tlz8-hY8W0jZ5SMMjqb9SBXsDBn5Ozbm0PChcvbPmsg
 ###
 POST http://localhost:8080/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NzYyMTg1MiwiaWF0IjoxNjg3NjE4MjUyfQ.S5ZkxeorOirj4Wr5PhYXKIKmwjcleyBeK9fcp7ag_z4
 Content-Type: application/json
 
 {
@@ -14,6 +17,7 @@ Content-Type: application/json
 }
 ###
 PUT http://localhost:8080/products/221
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NzYyMTg1MiwiaWF0IjoxNjg3NjE4MjUyfQ.S5ZkxeorOirj4Wr5PhYXKIKmwjcleyBeK9fcp7ag_z4
 Content-Type: application/json
 
 {
@@ -21,16 +25,47 @@ Content-Type: application/json
 }
 ###
 DELETE  http://localhost:8080/products/221
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NzYyMTg1MiwiaWF0IjoxNjg3NjE4MjUyfQ.S5ZkxeorOirj4Wr5PhYXKIKmwjcleyBeK9fcp7ag_z4
+########################################################
+
+### Categories APIS
+GET http://localhost:8080/categories/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
 ###
+GET http://localhost:8080/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
+###
+POST http://localhost:8080/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
+Content-Type: application/json
+
+{
+  "name": "Dogs",
+  "image": "https://picsum.photos/640/640?r=879"
+}
+###
+PUT http://localhost:8080/categories/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
+Content-Type: application/json
+
+{
+  "name":"cats"
+}
+###
+DELETE  http://localhost:8080/categories/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2ODc2Mjg1MjUsImlhdCI6MTY4NzYyNDkyNX0.FOnv85Fqxh3ZDFy9Olo5M5F_lFqBDERGXiQZAxTGj8U
+########################################################
+
+### Authentication APIS
 POST http://localhost:8080/createAccount
 Content-Type: application/json
 
 {
-  "name":"Fouad",
+  "name":"fouad",
   "lastName":"Abdelhady",
-  "userName":"youssef_abdelhady",
-  "password":"12345678",
-  "role":"customer"
+  "userName":"fouad_abdelhady@gmail.com",
+  "password":"12345F$a",
+  "role":"admin"
 }
 ###
 POST http://localhost:8080/login
@@ -38,11 +73,11 @@ Content-Type: application/json
 
 {
   "userName":"youssef_abdelhady",
-  "password":"12345677"
+  "password":"12345678"
 }
 ###
 GET http://localhost:8080/freshToken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NTYwMjkzfQ.N-JP8htnVAkbJOk1HtHkEN7DP2eSLDXV6vfD5tzvHC8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NjE3NjUyfQ.l_vzJnYtp53DwfgIaX2r1mdeNczZVjOqYnaUMlEsEl8
 ###
 GET http://localhost:8080/signOut
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NTYwMjkzLCJleHAiOjE2ODc1NjA0Mzd9.G-p1lP_0ieRF18Q4MwCEMeDaMCoMm9WuEKNxOZoo3m4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg3NjIxNTk0LCJpYXQiOjE2ODc2MTc5OTR9.PdgnclMHp3vhNLM2G_ceS4Ltg1EGvx35h5ygQCqsRUw

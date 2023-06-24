@@ -1,5 +1,4 @@
 import service from "../utils/services.js";
-import * as productBodySchema from "../models/productBodyModel.js";
 
 export async function getProducts(req, res){
     let productId = req.params.id;

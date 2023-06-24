@@ -14,8 +14,10 @@ app.listen(process.env.port||8080, (result)=>{
 
 import productRoutes from './routes/productsRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import categories from './routes/categoriesRoutes.js'
 function initRoutes(){
     app.use(express.json());
     app.use(productRoutes);
     app.use(authRoutes);
+    app.use(categories);
 }
