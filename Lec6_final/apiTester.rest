@@ -5,7 +5,7 @@ GET http://localhost:8080/products
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg3NjE4NTMxLCJpYXQiOjE2ODc2MTg0NzF9.Tlz8-hY8W0jZ5SMMjqb9SBXsDBn5Ozbm0PChcvbPmsg
 ###
 POST http://localhost:8080/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY4NzYyMTg1MiwiaWF0IjoxNjg3NjE4MjUyfQ.S5ZkxeorOirj4Wr5PhYXKIKmwjcleyBeK9fcp7ag_z4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2ODc4MDc4MTQsImlhdCI6MTY4NzgwNDIxNH0.n8ujuoHafO1DSU3T63BbUU3PaMxHgiTzC9CWZywITUo
 Content-Type: application/json
 
 {
@@ -29,14 +29,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvd
 ########################################################
 
 ### Categories APIS
-GET http://localhost:8080/categories/6
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
+GET http://localhost:8080/categories/13
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc4MDQyMTQsImV4cCI6MTY4NzgwNTA3M30.WBXttzJAhyA51odwUMHyYWtmmgS5SlGrfEf0RX6o3zE
 ###
 GET http://localhost:8080/categories
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
 ###
 POST http://localhost:8080/categories
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5QGdtYWlsLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NzYyODIwMiwiaWF0IjoxNjg3NjI0NjAyfQ.DxixVLh2gL5QUA1HxdXMbdqhTxEGxqv2C8cH9IUzMYQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc4MDQyMTQsImV4cCI6MTY4NzgwNTA3M30.WBXttzJAhyA51odwUMHyYWtmmgS5SlGrfEf0RX6o3zE
 Content-Type: application/json
 
 {
@@ -72,12 +72,12 @@ POST http://localhost:8080/login
 Content-Type: application/json
 
 {
-  "userName":"youssef_abdelhady",
-  "password":"12345678"
+  "userName":"fouad_abdelhady@gmail.com",
+  "password":"12345F$a"
 }
 ###
 GET http://localhost:8080/freshToken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNjg3NjE3NjUyfQ.l_vzJnYtp53DwfgIaX2r1mdeNczZVjOqYnaUMlEsEl8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZvdWFkX2FiZGVsaGFkeUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc4MDQyMTR9.hpWoBMjcO8d3hH67XMRChJy_uNlu30ZZNiHZUMhXzbY
 ###
 GET http://localhost:8080/signOut
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InlvdXNzZWZfYWJkZWxoYWR5Iiwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg3NjIxNTk0LCJpYXQiOjE2ODc2MTc5OTR9.PdgnclMHp3vhNLM2G_ceS4Ltg1EGvx35h5ygQCqsRUw

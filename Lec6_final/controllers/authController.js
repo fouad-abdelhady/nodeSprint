@@ -82,7 +82,7 @@ export async function signUserOut(req, res){
 
 function createAccessToken(userInfo){
     const now = Math.floor(Date.now() / 1000);
-    const expiresIn = 60 * 60; 
+    const expiresIn = 60 * 5; 
     const exp = now + expiresIn; 
     return Jwt.sign({ ...userInfo, exp }, process.env.ACCESS_TOKEN);
 }
